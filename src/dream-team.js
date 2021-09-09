@@ -11,9 +11,15 @@ import { NotImplementedError } from '../extensions/index.js';
  * 
  * createDreamTeam(['Matt', 'Ann', 'Dmitry', 'Max']) => 'ADMM'
  * createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]) => 'LOO'
- *
+ * 
  */
-export default function createDreamTeam(/* members */) {
+ export default function createDreamTeam(members) {
   throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+
+  // let filtered_members = members.filter(x=> typeof x ==="string").map(x => x!==' ', members)
+  // let dream_name = []
+  // for (let i =0; i<filtered_members.length; i++){
+    // filtered_members[i].split(' ')
+  // }
+  // return filtered_members[1]
 }
